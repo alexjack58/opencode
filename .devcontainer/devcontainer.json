@@ -1,0 +1,13 @@
+{
+  "name": "opencode-dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/shyim/devcontainers-features/bun:0": {}
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3 build-essential lcov",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  }
+}
