@@ -1,0 +1,6 @@
+$ cd ~/17-313/opencode
+$ qlty smells --no-snippets packages/opencode/src/util/media.ts
+
+packages/opencode/src/util/media.ts
+  15  Function with many returns (count = 7): sniffAttachmentMime
+

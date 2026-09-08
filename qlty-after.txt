@@ -1,0 +1,5 @@
+$ cd ~/17-313/opencode
+$ qlty smells --no-snippets packages/opencode/src/util/media.ts
+
+
+(no smells reported for packages/opencode/src/util/media.ts)
