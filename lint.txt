@@ -1,0 +1,17 @@
+$ cd ~/17-313/opencode
+$ bunx oxlint packages/opencode/src/util/media.ts packages/opencode/test/util/media.test.ts
+Found 0 warnings and 0 errors.
+Finished in 15ms on 2 files with 93 rules using 8 threads.
+
+$ bun lint   # repo-wide (oxlint over all 3307 files)
+Found 698 warnings and 2 errors.
+Finished in 221ms on 3307 files with 93 rules using 8 threads.
+
+# The 2 repo-wide errors are pre-existing on upstream main, in files this PR does not touch:
+,-[packages/web/src/types/lang-map.d.ts:26:3]
+,-[packages/session-ui/src/v2/components/prompt-input/index.tsx:163:19]
+
+$ git diff --stat 220d21e..HEAD   # files changed by this PR
+ packages/opencode/src/util/media.ts       | 44 ++++++++++++-----
+ packages/opencode/test/util/media.test.ts | 80 +++++++++++++++++++++++++++++++
+ 2 files changed, 113 insertions(+), 11 deletions(-)
