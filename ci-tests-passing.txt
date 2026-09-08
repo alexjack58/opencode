@@ -1,8 +1,7 @@
 GitHub Actions - CMU-313/opencode - PR #169 - workflow "test", job "unit"
-https://github.com/CMU-313/opencode/actions/runs/34175750538/job/101904683774
+https://github.com/CMU-313/opencode/actions/runs/34179791666/job/101916377079
 
 ##[group]opencode:test
-cache miss, executing a42a931dc5f189fe
 $ bun test --timeout 30000 --only-failures
 bun test v1.3.14 (0d9b296a)
 
@@ -10,14 +9,13 @@ bun test v1.3.14 (0d9b296a)
 
  3271 pass
  0 fail
-Ran 3294 tests across 248 files. [459.34s]
+Ran 3294 tests across 248 files. [463.92s]
 ##[endgroup]
 
  Tasks:    9 successful, 9 total
-Cached:    0 cached, 9 total
-  Time:    7m58.091s
+  Time:    8m3.168s
 
-Checks on PR #169:
-  unit          pass   9m21s
-  typecheck     pass   2m14s
-  e2e (smoke)   pass   1m37s
+Checks on PR #169 (commit 95789bf):
+  unit          pass   9m22s
+  typecheck     pass   1m49s
+  e2e (smoke)   pass   1m22s
